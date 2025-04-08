@@ -1,5 +1,5 @@
 import * as React from "react";
-const Herocharacter = (props:any) => (
+const Herocharacter = (props) => (
   <svg
     width={448}
     height={449}

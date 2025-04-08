@@ -30,7 +30,7 @@ export default function Information() {
 
 
 <div  className=" absolute left-0 top-0 ">
-   <Image width={1000} height={1000} className=" w-70" src={'/planet (1).svg'}></Image>
+   <Image alt="worldicn" width={1000} height={1000} className=" w-70" src={'/planet (1).svg'}></Image>
 </div>
       <form className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 p-8 rounded-lg">
         {fields.map((field, idx) => (

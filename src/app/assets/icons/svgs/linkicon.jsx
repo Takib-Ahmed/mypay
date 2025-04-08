@@ -1,4 +1,4 @@
-export  function EspaceClient(props:any) {
+export  function EspaceClient(props) {
     return (
       <svg
       width={195}
@@ -24,7 +24,7 @@ export  function EspaceClient(props:any) {
 
 
   
-  export default function Commencer(props:any) {
+  export default function Commencer(props) {
     return (
       <svg
       width={219}

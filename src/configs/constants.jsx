@@ -1,6 +1,6 @@
 
 
-export  function Logosvg(props:any) {
+export  function Logosvg(props) {
   return (
     <svg
     width={53}
