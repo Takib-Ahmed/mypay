@@ -1,4 +1,4 @@
-import WorldSvg from "@/app/assets/icons/svgs/World";
+
 import Image from "next/image";
 import React from "react";
 

@@ -1,5 +1,5 @@
 import * as React from "react";
-const ShadowSvg = (props:any) => (
+const ShadowSvg = (props) => (
   <svg
     width={813}
     height={900}
