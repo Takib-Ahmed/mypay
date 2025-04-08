@@ -39,11 +39,17 @@ export default function Pricing() {
         }
     ]
   return (
-    <div>
-       <div className="flex flex-wrap lg:flex-nowrap  w-full gap-10 lg:gap-0  items-center  justify-center px-5  py-20  text-white">
+    <div  className=' pt-20'>
+
+        <center className=' grid gap-5'>
+            <h1 className= ' text-xl sm:text-2xl  md:text-5xl'>Choisissez votre pack & Abonnez-vous</h1>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </center>
+       <div className="flex flex-wrap lg:flex-nowrap   w-full gap-10 lg:gap-0  items-center  justify-center px-5 lg:px-0  py-16  text-white">
         {
             Pricing.map((value,key)=>(
-                <div className={` ${key==1 ?'  bg-gradient-image overflow-hidden  w-xl justify-center items-center lg:w-auto   rounded-xl  lg:-translate-y-2.5 lg:-translate-x-2.5 lg:px-14  p-8 pt-8  min-[1250px]:px-24  min-[1250px]h-[40rem]':"pt-8 h-fit flex flex-col gap-7  overflow-hidden  w-xl    lg:w-3xl  min-[1250px]:w-3xl bg-white/20  bg-cover z-50 rounded-xl  brigthness-50 border-3 border-[#4b85fc] element "}
+                <div className={` ${key==1 ?' element2 bg-gradient-image overflow-hidden  w-xl lg:w-[30.5%] justify-center items-center    rounded-xl  lg:-translate-y-3 lg:-translate-x-3 lg:px-14  p-8 pt-8  min-[1250px]:px-24  min-[1250px]:h-[40rem]':"pt-8 h-fit flex flex-col gap-7  overflow-hidden  w-xl     min-[1250px]:w-3xl bg-white/20  bg-cover z-50 rounded-xl  brigthness-50 border-3 border-[#4b85fc] element "}
                 
                 
                 
@@ -70,7 +76,7 @@ export default function Pricing() {
 <ul className=' flex flex-col gap-3   lg:gap-4 z-50'>
     <li className={`font-bold ${key==1 && ' sm:text-center  bg-text-gradient'}`} >{value.title}</li>
     {value.benefits.map((benefit,key)=>(
-        <li key={key} className=' flex gap-1 items-center'><span><Righticn className=' md:w-[75%]'/></span>{benefit}</li>
+        <li key={key} className=' flex gap-1.5 sm:gap-1 items-center'><span><Righticn className=' w-6 md:w-[75%]'/></span>{benefit}</li>
     ))}
 </ul>
 

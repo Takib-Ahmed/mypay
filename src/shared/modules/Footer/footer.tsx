@@ -1,4 +1,5 @@
 import Socialicns from "@/app/assets/icons/svgs/Socials";
+import { Logosvg } from "@/configs/constants";
 
 const Footer = () => {
     return (
@@ -8,9 +9,10 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               {/* Replace this with your actual logo */}
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black font-bold text-xl">
-                ⨉
-              </div>
+              {/* <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black font-bold text-xl">
+             
+              </div> */}
+              <Logosvg/>
             </div>
             <p className=" lg:w-64 text-gray-400 leading-relaxed">
               A new way to make the payments easy, reliable and secure.

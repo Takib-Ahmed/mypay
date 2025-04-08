@@ -1,4 +1,5 @@
 
+import Button from "@/shared/components/Button";
 import Image from "next/image";
 import React from "react";
 
@@ -24,17 +25,22 @@ const fields: Field[] = [
 export default function Information() {
   return (
 
-    
+<>
+
+<center className='   pt-20'>
+    <h1 className= ' text-xl sm:text-2xl  md:text-5xl'>Demande d’information</h1>
+
+</center>
     <div className="min-h-screen flex items-center justify-center  text-white  relative">
 
 
 
-<div  className=" absolute left-0 top-0 ">
+<div  className=" absolute left-0 -top-24 ">
    <Image alt="worldicn" width={1000} height={1000} className=" w-70" src={'/planet (1).svg'}></Image>
 </div>
-      <form className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 p-8 rounded-lg">
+      <form className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 p-8 pt-0 rounded-lg">
         {fields.map((field, idx) => (
-          <div key={idx} className="flex flex-col">
+          <div key={idx} className="flex flex-col mb-2 px-5">
             <label className="text-sm font-semibold uppercase mb-2">{field.label}</label>
             <input
               type={field.type || "text"}
@@ -44,17 +50,13 @@ export default function Information() {
             />
           </div>
         ))}
+   <div className=" flex items-center justify-start mt-3 ps-6">
+   <Button className="  h-[70%] w-[65%]  ">
+          Envoyer
+          </Button>
+   </div>
 
-        <div className="md:col-span-2 flex justify-end">
-          <button
-            type="submit"
-            className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full transition-all duration-200 shadow-lg"
-          >
-            Envoyer
-            <span className="text-xl">↗</span>
-          </button>
-        </div>
       </form>
-    </div>
+    </div></>
   );
 }

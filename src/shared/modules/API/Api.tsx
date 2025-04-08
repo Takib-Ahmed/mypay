@@ -6,6 +6,7 @@ import MasterCardicn from '@/app/assets/icons/svgs/MasterCard';
 import Paypalicn from '@/app/assets/icons/svgs/Paypal';
 import Platforms from '@/app/assets/icons/svgs/platforms'
 import Visaicn from '@/app/assets/icons/svgs/Visa';
+import Button from '@/shared/components/Button';
 
 export default function Api(){
     return (
@@ -18,7 +19,7 @@ export default function Api(){
             Nous disposons d’une api solide fait pour s’intégrer au mieux à votre environnement.
 
                   <div className="button">
-                        <Commencer  className='w-1/3 sm:w-1/3 md:w-auto' />
+                    <Button>VOIR l’API</Button>
                       </div>
             </div>
             <div className=' flex w-full md:w-auto items-center  justify-center'>

@@ -1,5 +1,4 @@
 import Herocharacter from "@/app/assets/icons/svgs/Herocharacter";
-import Commencer from "@/app/assets/icons/svgs/linkicon";
 import Robohand from "@/app/assets/icons/svgs/Robohand";
 import Visaicn from "@/app/assets/icons/svgs/Visa";
 import Paypalicn from "@/app/assets/icons/svgs/Paypal";
@@ -7,7 +6,7 @@ import MasterCardicn from "@/app/assets/icons/svgs/MasterCard";
 import ApplePayicn from "@/app/assets/icons/svgs/ApplePayicn";
 import Gpayicn  from "@/app/assets/icons/svgs/Gpay";
 import React from "react";
-
+import Button from '@/shared/components/Button'
 export default function Hero() {
   return (
     <div className="  bg-hero-graident flex flex-col   gap-16 md:gap-24  lg:gap-32 justify-center  items-center w-full px-5  pt-20 lg:pt-28  relative">
@@ -28,7 +27,7 @@ export default function Hero() {
             valutarum.
           </p>
           <div className="button">
-            <Commencer  className='w-1/3 sm:w-1/3 md:w-auto' />
+    <Button className=" !text-base">COMMENCER</Button>
           </div>
         </div>
         <div className="heroright        sm:justify-end sm:items-end lg:w-[40%]     flex flex-col  ">
