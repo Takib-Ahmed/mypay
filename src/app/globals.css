@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+:root {
+  --background:#00020d ;
+  /* --foreground: #171717; */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+@layer utilities {
+  .font-Jakarta {
+    font-family: var(--font-plus_jakartasans), sans-serif;
+  }
+  .font-dmsans {
+    font-family: var(--font-plus_jakartasans), sans-serif;
+    font-weight: 500;
+  }
+}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+
+body {
+  
+background: url('/d7bbaf2595529a8aa0ea319df961c344.jpeg') no-repeat;
+background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  height: 100%;
+
+
+}
+
+body::before {
+  content: '';
+  position: absolute;
+inset: 0;
+  
+  background: rgba(0, 0, 0, 0.66);
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.bg-hero-graident{
+
+background: url(https://www.figma.com/file/ZuIH7Lk3O8ktHoC4apw5K7/image/a57b3849d7bbaf2595529a8aa0ea319df961c344) no-repeat ;
+ background-size: 100% 100%;
+&::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+ 
+}
+
+}
+
+.bg-text-gradient{
+background:linear-gradient(96.34deg, #4B86FC 0%, #75F2F6 26.45%);
+;
+background-clip: text;
+color: transparent;
+}
+
+.bg-gradient{
+  background:linear-gradient(96.34deg, #4B86FC 0%, #75F2F6 26.45%);
+ 
+  }
+
+
+  .bg-gradient-image{
+
+    background: url(https://www.figma.com/file/ZuIH7Lk3O8ktHoC4apw5K7/image/a57b3849d7bbaf2595529a8aa0ea319df961c344) no-repeat ;
+    background-size:  cover;
+    position: relative;
+
+    &::before{
+      content: '';
+     
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      
+     
+    }
+  
+    
+    }
+
+
+
+    .element{
+
+      -webkit-backdrop-filter: blur(100px);
+      backdrop-filter: blur(100px);
+      background-size: cover;
+      &::before{
+        content: '';
+        position: absolute;
+    
+     
+        background: rgba(0,0,0,0.75);
+       
+      }
+    
+    }
+    .element::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to left, #4b86ce, #75f2f631);
+  
+
+filter: brightness(1.2);
+      -webkit-backdrop-filter: blur(10px); /* For Safari */
+      backdrop-filter: blur(10px);
+      border-radius: 12px; /* Optional: smooth corners */
+      z-index: -10;
+      opacity: 0.2; /* Optional: transparency */
+    }
+    
+    
+
+
+
+
+
+
+    
+.bg-hero-gradiant::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.bg-form-gradiant::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+.gradient-input {
+  background: linear-gradient(
+    144.39deg,
+    rgba(255, 255, 255, 0.4) -278.56%,
+    rgba(109, 109, 109, 0.4) -78.47%,
+    rgba(17, 16, 29, 0.4) 122.61%
+  );
+  border-radius: 8px;
+  padding: 16px;
+  color: white;
+  outline: none;
+}
+.gradient-input::placeholder {
+  color: white;
+}
