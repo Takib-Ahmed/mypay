@@ -1,7 +1,6 @@
 
 import ApplePayicn from '@/app/assets/icons/svgs/ApplePayicn';
 import Gpayicn from '@/app/assets/icons/svgs/Gpay';
-import Commencer from '@/app/assets/icons/svgs/linkicon';
 import MasterCardicn from '@/app/assets/icons/svgs/MasterCard';
 import Paypalicn from '@/app/assets/icons/svgs/Paypal';
 import Platforms from '@/app/assets/icons/svgs/platforms'
@@ -19,7 +18,7 @@ export default function Api(){
             Nous disposons d’une api solide fait pour s’intégrer au mieux à votre environnement.
 
                   <div className="button">
-                    <Button>VOIR l’API</Button>
+                    <Button >VOIR l’API</Button>
                       </div>
             </div>
             <div className=' flex w-full md:w-auto items-center  justify-center'>

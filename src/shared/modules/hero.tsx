@@ -27,7 +27,7 @@ export default function Hero() {
             valutarum.
           </p>
           <div className="button">
-    <Button className=" !text-base">COMMENCER</Button>
+    <Button   className=" !text-base">COMMENCER</Button>
           </div>
         </div>
         <div className="heroright        sm:justify-end sm:items-end lg:w-[40%]     flex flex-col  ">
